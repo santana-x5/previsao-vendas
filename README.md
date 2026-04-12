@@ -1,6 +1,6 @@
 # 📈 Sistema de Previsão de Vendas
 
-> [DESCRIÇÃO CURTA — ex: "Aplicação de previsão de séries temporais de vendas com Prophet, FastAPI e Streamlit."]
+> Aplicação de previsão de séries temporais de vendas com Prophet, FastAPI e Streamlit.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Prophet](https://img.shields.io/badge/Prophet-1.1-orange)
@@ -13,20 +13,20 @@
 
 ## 📌 Sobre o projeto
 
-[PARÁGRAFO DESCRITIVO — descreva o que o sistema faz, qual problema resolve e qual o contexto de uso. Ex: "Este sistema analisa o histórico de vendas de uma empresa fictícia, identifica tendências e sazonalidades, e gera projeções futuras com intervalos de confiança. O resultado é apresentado em um dashboard interativo com gráficos, KPIs e exportação de dados."]
+Este sistema analisa o histórico de vendas de uma empresa fictícia, identifica tendências e sazonalidades, e gera projeções futuras com intervalos de confiança. O resultado é apresentado em um dashboard interativo com gráficos, KPIs e exportação de dados.
 
-Projeto desenvolvido como **portfólio técnico**, com arquitetura desenhada para evoluir para um produto SaaS.
+Projeto desenvolvido como **portfólio técnico**, com arquitetura desenhada para permitir evolução para um produto SaaS.
 
 ---
 
 ## 🖥️ Preview
 
-[PRINT OU GIF DO DASHBOARD — substitua pela imagem após concluir a interface]
+[visualização do DASHBOARD — indisponível por enquanto]
 
 ```
-Insira aqui: screenshot do dashboard Streamlit rodando
-Sugestão de nome do arquivo: assets/dashboard_preview.png
-Markdown para inserir: ![Dashboard Preview](assets/dashboard_preview.png)
+Insirir aqui: screenshot do dashboard Streamlit rodando
+assets/dashboard_preview.png
+![Dashboard Preview](assets/dashboard_preview.png)
 ```
 
 ---
@@ -34,7 +34,7 @@ Markdown para inserir: ![Dashboard Preview](assets/dashboard_preview.png)
 ## 🧱 Arquitetura
 
 ```
-[DIAGRAMA OPCIONAL — pode ser uma imagem ou o texto abaixo adaptado]
+
 
 dados_mockados.csv
        │
@@ -64,7 +64,7 @@ Streamlit (dashboard)
 ## 🗂️ Estrutura do repositório
 
 ```
-[PREENCHA CONFORME A ESTRUTURA FINAL DO PROJETO]
+
 
 sales-forecast/
 ├── data/
@@ -93,14 +93,14 @@ sales-forecast/
 | Tecnologia | Versão | Função |
 |---|---|---|
 | Python | 3.11 | Linguagem base |
-| Pandas | [PREENCHA] | Geração e limpeza dos dados |
-| Prophet | [PREENCHA] | Modelo de previsão de séries temporais |
-| Plotly | [PREENCHA] | Visualização interativa |
-| FastAPI | [PREENCHA] | API REST para servir o modelo |
-| Streamlit | [PREENCHA] | Dashboard e interface do usuário |
+| Pandas | [?] | Geração e limpeza dos dados |
+| Prophet | [?] | Modelo de previsão de séries temporais |
+| Plotly | [?] | Visualização interativa |
+| FastAPI | [?] | API REST para servir o modelo |
+| Streamlit | [?] | Dashboard e interface do usuário |
 | SQLite | — | Armazenamento local dos dados |
-| Joblib | [PREENCHA] | Serialização do modelo treinado |
-| Docker Compose | [PREENCHA] | Orquestração dos serviços |
+| Joblib | [?] | Serialização do modelo treinado |
+| Docker Compose | [?] | Orquestração dos serviços |
 
 ---
 
@@ -115,8 +115,8 @@ sales-forecast/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/[SEU_USUARIO]/[NOME_DO_REPOSITORIO].git
-cd [NOME_DO_REPOSITORIO]
+git clone https://github.com/santana-x5/previsao-vendas.git
+cd previsao-vendas
 
 # 2. Copie o arquivo de variáveis de ambiente
 cp .env.example .env
@@ -138,10 +138,10 @@ Após subir, acesse:
 
 Os dados utilizados neste projeto são **inteiramente fictícios**, gerados via script Python com as seguintes características:
 
-- **Período:** [PREENCHA — ex: Janeiro/2022 a Dezembro/2024]
+- **Período:**  Janeiro/2022 a janeiro/2025
 - **Frequência:** Diária
-- **Categorias simuladas:** [PREENCHA — ex: Eletrônicos, Vestuário, Alimentos]
-- **Sazonalidade embutida:** Picos em dezembro/janeiro, queda em [PREENCHA]
+- **Categorias simuladas:**  Vestuário
+- **Sazonalidade embutida:** Picos em Jan/Dez/jun/Jul, baixas em meses de verão
 - **Ruído:** Distribuição normal com desvio padrão de [PREENCHA]
 
 Para gerar os dados novamente:
@@ -162,7 +162,7 @@ Retorna a previsão de vendas para o horizonte informado.
 ```json
 {
   "horizon_days": 90,
-  "category": "[PREENCHA — ex: 'Eletrônicos' ou 'all']"
+  "category": "casacos"
 }
 ```
 
@@ -196,13 +196,13 @@ O notebook `notebooks/exploratory.ipynb` documenta:
 4. Avaliação com métricas MAE e MAPE
 5. Geração do gráfico final de projeção
 
-[ADICIONE O LINK DO NOTEBOOK RENDERIZADO NO NBVIEWER SE QUISER — ex: https://nbviewer.org/github/...]
+[ADICIONAR O LINK DO NOTEBOOK RENDERIZADO NO NBVIEWER  — : https://nbviewer.org/github/...]
 
 ---
 
 ## 📈 Resultados
 
-[PREENCHA APÓS CONCLUIR O MODELO]
+[PREENCHER APÓS CONCLUIR O MODELO]
 
 | Métrica | Valor |
 |---|---|
@@ -215,12 +215,12 @@ O notebook `notebooks/exploratory.ipynb` documenta:
 
 ## 🗺️ Roadmap
 
-- [x] Geração de dados mockados
-- [x] Pipeline de limpeza com Pandas
-- [x] Modelo Prophet treinado e avaliado
-- [x] API FastAPI com endpoint /predict
-- [x] Dashboard Streamlit
-- [x] Docker Compose
+- [ ] Geração de dados mockados
+- [ ] Pipeline de limpeza com Pandas
+- [ ] Modelo Prophet treinado e avaliado
+- [ ] API FastAPI com endpoint /predict
+- [ ] Dashboard Streamlit
+- [ ] Docker Compose
 - [ ] Migração para PostgreSQL + TimescaleDB
 - [ ] n8n para automação de pipeline
 - [ ] Integração com IA generativa para narrativa das previsões
@@ -230,8 +230,6 @@ O notebook `notebooks/exploratory.ipynb` documenta:
 
 ## 🤝 Contribuindo
 
-[PREENCHA SE QUISER ACEITAR CONTRIBUIÇÕES — caso contrário, remova esta seção]
-
 Pull requests são bem-vindos. Para mudanças maiores, abra uma issue primeiro descrevendo o que deseja alterar.
 
 ---
@@ -240,18 +238,17 @@ Pull requests são bem-vindos. Para mudanças maiores, abra uma issue primeiro d
 
 [ESCOLHA E PREENCHA — sugestões: MIT para portfólio aberto, ou remova se preferir sem licença explícita]
 
-Este projeto está sob a licença [NOME DA LICENÇA]. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
 
 ## 👤 Autor
 
-**[SEU NOME]**
+**[Klinger F. X. Santana]**
 
-- GitHub: [@[SEU_USUARIO]](https://github.com/[SEU_USUARIO])
-- LinkedIn: [linkedin.com/in/[SEU_PERFIL]](https://linkedin.com/in/[SEU_PERFIL])
-- [OUTRO CONTATO OPCIONAL — portfólio, e-mail, etc.]
+- GitHub: [@santana-x5](https://github.com/santana-x5)
+- LinkedIn: [linkedin.com/in/klinger-santana](https://linkedin.com/in/klinger-santana-8357723a8)
 
 ---
 
-*Projeto desenvolvido como portfólio técnico em [MÊS/ANO DE INÍCIO].*
+*Projeto desenvolvido como portfólio técnico em [04/2026].*
