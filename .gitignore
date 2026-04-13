@@ -1,0 +1,28 @@
+# Ambiente virtual
+.venv/
+
+# Variáveis de ambiente
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Banco de dados local
+*.db
+*.sqlite
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log

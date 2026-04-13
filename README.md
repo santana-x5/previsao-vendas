@@ -24,7 +24,7 @@ Projeto desenvolvido como **portfólio técnico**, com arquitetura desenhada par
 [visualização do DASHBOARD — indisponível por enquanto]
 
 ```
-Insirir aqui: screenshot do dashboard Streamlit rodando
+Inserir aqui: screenshot do dashboard Streamlit rodando
 assets/dashboard_preview.png
 ![Dashboard Preview](assets/dashboard_preview.png)
 ```
@@ -138,10 +138,10 @@ Após subir, acesse:
 
 Os dados utilizados neste projeto são **inteiramente fictícios**, gerados via script Python com as seguintes características:
 
-- **Período:**  Janeiro/2022 a janeiro/2025
+- **Período:**  2022 a 2024
 - **Frequência:** Diária
-- **Categorias simuladas:**  Vestuário
-- **Sazonalidade embutida:** Picos em Jan/Dez/jun/Jul, baixas em meses de verão
+- **Categorias simuladas:**  loja de roupa/moda
+- **Sazonalidade embutida:** Picos em Dezembro, datas comemorativas, queda em fevereiro
 - **Ruído:** Distribuição normal com desvio padrão de [PREENCHA]
 
 Para gerar os dados novamente:
